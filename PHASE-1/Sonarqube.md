@@ -50,7 +50,8 @@ To run SonarQube in a Docker container with the provided command, you can follow
 
 ```bash
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
-```
+### error-- permision denied- to resolve give permision
+sudo chmod 666 /var/run/docker.sock
 
 This command will download the `sonarqube:lts-community` Docker image from Docker Hub if it's not already available locally. Then, it will create a container named "sonar" from this image, running it in detached mode (`-d` flag) and mapping port 9000 on the host machine to port 9000 in the container (`-p 9000:9000` flag).
 
